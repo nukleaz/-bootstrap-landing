@@ -1,0 +1,338 @@
+@media (max-width: 991px) {
+  .hero__container::after {
+    width: 46%;
+    top: -37%;
+    right: 2%;
+    background-image: url("../img/hero-img_tablet.png");
+  }
+
+  .hero {
+    padding-bottom: 135px;
+  }
+
+  .hero__title {
+    margin-bottom: 17px;
+    font-size: 50px;
+  }
+
+  .main__about {
+    margin-bottom: 74px;
+  }
+
+  .about__descr {
+    padding-left: 240px;
+  }
+
+  .about__descr::before {
+    top: 23px;
+    background-size: 30.5% 79%;
+  }
+
+  .about__item:nth-child(n) .about__paragraph_bold {
+    transform: translate(0, 0);
+  }
+
+  .about__item:first-child .line-break {
+    display: inline;
+  }
+
+  .about__paragraph_bold {
+    padding-top: 81px;
+    width: 100%;
+  }
+
+  .teachers__list {
+    row-gap: 24px;
+  }
+
+  .teachers__item:first-child .line-break {
+    display: none;
+  }
+
+  .teachers__item:nth-child(3) .teachers__paragraph {
+    margin-right: -2px;
+  }
+
+  .teachers__photo {
+    border-radius: 18px 18px 0 0;
+  }
+
+  .courses__item:first-child::before {
+    background-image: url("../img/courses-Cinema4d_786px.png");
+  }
+  .courses__item:nth-child(2)::before {
+    background-image: url("../img/courses-Blender_768px.png");
+  }
+  .courses__item:nth-child(3)::before {
+    background-image: url("../img/courses-3dsMax_768px.png");
+  }
+  .courses__item:last-child::before {
+    background-image: url("../img/courses-ZBrush_768px.png");
+  }
+
+  .courses__time-span {
+    top: 11px;
+    right: 22px;
+  }
+
+  .courses__item:nth-child(2) .article {
+    padding-right: 22px;
+  }
+
+  .article__btn {
+    padding: 21px 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-top: 28px;
+    padding-bottom: 29px;
+  }
+
+  .header__content {
+    gap: 30px;
+  }
+
+  .nav__item:nth-child(3),
+  .nav__item:last-child {
+    transform: translateX(2px);
+  }
+
+  .main__hero {
+    margin-bottom: 81px;
+  }
+
+  .hero {
+    padding-top: 78px;
+  }
+
+  .hero__container::after {
+    display: none;
+  }
+
+  .hero__title {
+    margin-bottom: 15px;
+  }
+
+  .main__about {
+    margin-bottom: 54px;
+  }
+
+  .about__descr {
+    padding-left: 180px;
+  }
+
+  .about__descr::before {
+    top: 0px;
+    left: 1px;
+    background-size: 29% 41%;
+  }
+
+  .courses__item:first-child::before {
+    background-image: url("../img/courses-Cinema4d_576px.png");
+  }
+  .courses__item:nth-child(2)::before {
+    background-image: url("../img/courses-Blender_576px.png");
+  }
+  .courses__item:nth-child(3)::before {
+    background-image: url("../img/courses-3dsMax_576px.png");
+  }
+  .courses__item:last-child::before {
+    background-image: url("../img/courses-ZBrush_576px.png");
+  }
+
+  .article {
+    padding-top: 33px;
+  }
+
+  .article__descr {
+    margin-bottom: 33px;
+  }
+
+  .courses__item:nth-child(3) .article .line-break {
+    display: inline;
+  }
+
+  .article__btn {
+    padding: 21px 48px;
+  }
+
+  .main__courses {
+    margin-bottom: 79px;
+  }
+
+  .footer__item:last-child {
+    transform: translateY(-1px);
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    padding-top: 23px;
+    padding-bottom: 25px;
+  }
+
+  .header__content {
+    gap: 24px;
+  }
+
+  .header__nav {
+    width: 100%;
+    transform: translateX(2px);
+  }
+
+  .nav__list {
+    margin: 0 -15px;
+    overflow-x: auto;
+  }
+
+  .nav__item:first-child {
+    padding-left: 15px;
+  }
+
+  .nav__item:last-child {
+    padding-right: 15px;
+  }
+
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 52px;
+  }
+
+  .main__hero {
+    margin-bottom: 51px;
+  }
+
+  .hero__title {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+
+  .hero__paragraph {
+    margin-bottom: 45px;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .hero__btn {
+    padding: 20px 53px;
+    font-size: 16px;
+  }
+
+  .main__about {
+    margin-bottom: 50px;
+  }
+
+  .about__container {
+    gap: 25px;
+  }
+
+  .about__descr::before {
+    display: none;
+  }
+
+  .about__descr {
+    padding-left: 0px;
+  }
+
+  .about__title {
+    margin-bottom: 0;
+  }
+
+  .about__list {
+    gap: 34px;
+  }
+
+  .about__item::before {
+    top: -2px;
+    left: 15px;
+  }
+
+  .about__title {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .about__title .line-break,
+  .about__paragraph .line-break {
+    display: none;
+  }
+
+  .about__paragraph_bold {
+    display: flex;
+    align-items: center;
+    min-height: 76px;
+    padding-top: 0;
+    padding-left: 110px;
+  }
+
+  .main__teachers {
+    padding-top: 47px;
+    padding-bottom: 46px;
+    margin-bottom: 45px;
+  }
+
+  .teachers__title {
+    margin-bottom: 24px;
+    font-size: 20px;
+  }
+
+  .teachers__item:nth-child(3) .teachers__teacher-name {
+    margin-bottom: 9px;
+  }
+
+  .courses__title {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+
+  .courses__list {
+    row-gap: 29px;
+  }
+
+  .courses__item {
+    min-height: 654px;
+  }
+
+  .courses__item:first-child::before {
+    background-image: url("../img/courses-Cinema4d_320px.png");
+  }
+  .courses__item:nth-child(2)::before {
+    background-image: url("../img/courses-Blender_320px.png");
+  }
+  .courses__item:nth-child(3)::before {
+    background-image: url("../img/courses-3dsMax_320px.png");
+  }
+  .courses__item:last-child::before {
+    background-image: url("../img/courses-ZBrush_320px.png");
+  }
+
+  .courses__item::before {
+    background-size: cover;
+  }
+
+  .article {
+    padding-top: 30px;
+  }
+
+  .courses__item:nth-child(3) .article__title {
+    transform: translate(2px, 1px);
+  }
+
+  .courses__item:last-child .article__title {
+    transform: translate(1px, 3px);
+  }
+
+  .article__title {
+    line-height: 1.3;
+  }
+
+  .article__btn {
+    padding: 21px 56px;
+  }
+
+  .main__courses {
+    margin-bottom: 50px;
+  }
+}

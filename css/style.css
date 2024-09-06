@@ -1,0 +1,388 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.list-reset {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  border-radius: 20px;
+  background: #3f2aff;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+}
+
+.paragraph {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+.page {
+  font-family: "Roboto", sans-serif;
+  min-width: 320px;
+}
+
+.header {
+  padding: 27px 0;
+  width: 100%;
+  background-color: #3f2aff;
+}
+
+.header__logo {
+  transform: translateY(2px);
+}
+
+.nav__list {
+  gap: 56px;
+  transform: translate(-2px, 0px);
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: 18px;
+  text-wrap: nowrap;
+  color: #fff;
+}
+
+.hero {
+  position: relative;
+  padding: 130px 0;
+  background: radial-gradient(
+    44.07% 44.07% at 67.78% 55.93%,
+    rgb(85, 86, 129) 0%,
+    rgb(33, 33, 51) 100%
+  );
+}
+
+.main__hero {
+  margin-bottom: 80px;
+}
+
+.hero__container {
+  position: relative;
+}
+
+.hero__container::after {
+  content: "";
+  position: absolute;
+  top: -32%;
+  right: 1%;
+  width: 56%;
+  height: 595px;
+  background-image: url("../img/hero-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.hero__row {
+  position: relative;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1;
+  color: #fff;
+}
+
+.hero__paragraph {
+  margin-bottom: 62px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.hero__btn {
+  padding: 24px 75px;
+}
+
+.main__about {
+  margin-bottom: 91px;
+}
+
+.about__container {
+  gap: 35px;
+}
+
+.about__descr {
+  position: relative;
+  padding-left: 190px;
+}
+
+.about__descr::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/about-img.png");
+  background-repeat: no-repeat;
+}
+
+.about__title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  color: #2e2b44;
+}
+
+.about__paragraph {
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.about__paragraph_bold {
+  width: 70%;
+  transform: translateX(5px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.about__item:last-child .about__paragraph_bold {
+  transform: translate(2px, 1px);
+}
+
+.about__item {
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.about__item:first-child .line-break {
+  display: none;
+}
+
+.about__item::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 15px;
+  height: 80px;
+  width: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.about__item:first-child::before {
+  background-image: url("../img/eye-circle.svg");
+}
+
+.about__item:nth-child(2)::before {
+  background-image: url("../img/fingers.svg");
+}
+
+.about__item:last-child::before {
+  background-image: url("../img/speaker.svg");
+}
+
+.teachers {
+  padding-top: 72px;
+  padding-bottom: 73px;
+  background: #212133;
+}
+
+.main__teachers {
+  margin-bottom: 72px;
+}
+
+.teachers__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+
+.teachers__photo {
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 8% 8% 0 0;
+}
+
+.teachers__teacher-name {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.teachers__paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #85859b;
+}
+
+.courses__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #212133;
+}
+
+.courses__list {
+  row-gap: 30px;
+}
+
+.courses__item {
+  position: relative;
+  padding-top: 180px;
+  min-height: 480px;
+}
+
+.courses__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 180px;
+  width: calc(100% - 30px);
+  border-radius: 20px 20px 0 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.courses__item:first-child::before {
+  background-image: url("../img/courses-Cinema4d_1440px.png");
+}
+
+.courses__item:nth-child(2)::before {
+  background-image: url("../img/courses-Blender_1440px.png");
+}
+
+.courses__item:nth-child(3)::before {
+  background-image: url("../img/courses-3dsMax_1440px.png");
+}
+
+.courses__item:last-child::before {
+  background-image: url("../img/courses-ZBrush_1440px.png");
+}
+
+.courses__time-span {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  padding-left: 27px;
+  padding: 3px 3px 3px 27px;
+  background-image: url("../img/watch.svg");
+  background-repeat: no-repeat;
+  background-position: -2px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.article {
+  position: relative;
+  padding: 30px;
+  padding-top: 34px;
+  height: 100%;
+  border-radius: 0 0 20px 20px;
+  background: #edf0f9;
+}
+
+.article__descr {
+  margin-bottom: 29px;
+}
+
+.article__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #212133;
+}
+
+.courses__item:nth-child(3) .line-break {
+  display: none;
+}
+
+.article__paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.article__btn {
+  align-self: flex-start;
+  padding: 21px 60px;
+  font-size: 16px;
+}
+
+.main__courses {
+  margin-bottom: 80px;
+}
+
+.footer__content {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  background-color: #2e2b44;
+}
+
+.footer__item:not(:last-child) {
+  transform: translate(-2px, 1px);
+}
+
+.copyright-span {
+  transform: translateY(4px);
+  font-weight: 400;
+  font-size: 13px;
+  color: #2e2b44;
+}
+
+.copyright-symbol {
+  color: #3f2aff;
+}
